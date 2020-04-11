@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { calcPossibleSecurityContexts } from '@angular/compiler/src/template_parser/binding_parser';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-first-app';
+  name = 'Darshil Kansara';
+  inputText="";
+  copytext="";
+  title="my-first-app";
+  
+  onClick(){
+    this.copytext=this.inputText;
+    
+  }
+
+  
 }
